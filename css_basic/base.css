@@ -15,7 +15,7 @@ html, body {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -41,7 +41,7 @@ body {
 	color: rgba(0, 0, 0, 0.8);
 }
 h1, h2, h3,  header {
-	font-family: 'Yeseva One', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 article {
 }
@@ -50,7 +50,7 @@ header {
 	transition: border-bottom-color 1s ease;
 }
 header a {
-	color: rgba(0, 0, 0, 0.8);
+	color: rgba(173, 158, 158, 0.8);
 }
 aside {
 	background: #FAFAFA;
@@ -64,7 +64,7 @@ footer a {
 	color: rgba(0, 0, 0, 0.8);
 }
 a {
-	color: #7400f8;
+	color: #00aef8;
 }
 
 
@@ -78,7 +78,7 @@ a {
 }
 
 article {
-	padding: 50px 15px;
+	padding: 60px 20px;
 }
 article > *:first-child {
 	margin-top: 0;
@@ -94,8 +94,8 @@ header .right {
 
 /* Header */
 header {
-	padding: 20px 0;
-	height: 80px;
+	padding: 25px 0;
+	height: 70px;
 }
 header ul {
 	list-style: none;
@@ -112,9 +112,8 @@ header li:first-child {
 header li a {
 	margin: 0 10px;
 }
-header li.logo {
-	font-size: 36px;
-}
+
+
 header a {
 	text-decoration: none;
 }
