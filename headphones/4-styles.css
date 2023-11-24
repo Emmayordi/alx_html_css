@@ -10,7 +10,7 @@
 
 body {
     font-family:'poppins', sans-serif;
-    background-image:url("img/headphones_hero_2.jpg");
+    background-image:url("img/headphones_hero_1.jpg");
     background-attachment:fixed;
     background-position:center;
    
@@ -221,7 +221,7 @@ background-position:top;
 background-size: cover;
 background-repeat: no-repeat;
 padding: 100px 0px;
-    background-image: url(./images/headphones_hero_2.jpg);
+    background-image: url(img/headphones_hero_2.jpg);
  }
 .result .hexa {
     display: flex;

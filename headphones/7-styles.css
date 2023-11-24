@@ -211,61 +211,52 @@ nav li a:hover {
 
    /*-----Start of our results section-----*/
 
-   .result {
-    background-position: center;
-    background-attachment:scroll;
-background-position:top;
-background-size: cover;
-background-repeat: no-repeat;
-padding: 100px 0px;
-    background-image: url(./images/headphones_hero_2.jpg);
- }
-.result .hexa :hover {
-    display: flex;
-    color: black;
-        opacity: 0.9
-    
- }
-.result .hexa .penta { 
-background-image: url(./images/pentagone.png);
-background-size: 75%;
-background-repeat: no-repeat;
-width: 190px;
-height: 190px;
-display: flex;
-flex-wrap: wrap;
-flex-flow: column;
-justify-content: center;
-align-items: center;
-margin: 50px;
+   #results {
+    background-image: url("img/headphones_hero_2.jpg");
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
 }
-.result h2 {  
 
-text-align: center;
-align-items: center;
-margin-top: 10px;
-color: #FFF;
-font-weight: 700;
-padding:50px
+#results div h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
 }
-.result p {  
 
-text-align: center;
-align-items: center;
-margin-top: 10px;
-color: #FFF;
-font-weight: 500;
-font-size: 14px;
-line-height: 26px;
-margin-bottom: 25px;
-display: flex;
-justify-content: center;
+#results div h2+p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 70px;
 }
-.result .hexa .penta .p {
-margin-bottom: 100px;
-display: flex;
-padding: 50px 30px 30px; 
+
+/* Creating the pentagon shape */
+.pentagon-container {
+    position: relative;
+    width: 157.5px;
+    height: 150px;
+    background: #FF6565;
+    clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+    margin-left: 20px; 
+    margin-top: 50px;
+    text-align: center; 
 }
+
+.pentagon-container h1,
+.pentagon-container p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 
 @media screen and (max-width: 1000px) {
     .result .hexa {
@@ -286,7 +277,7 @@ padding: 50px 30px 30px;
        padding: 0;
     }
  }
-      /*-----end of our results section-----*/
+     
 
         /*-----Start of contact section-----*/
 
@@ -345,49 +336,52 @@ padding: 50px 30px 30px;
             cursor: pointer;
             opacity: 0.9
         }
-        /*-----end of contact section-----*/
+     
 
         /*-----start of footer-----*/
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
 
-        .footer {
-            background-color:#071629;
-            height: 200px;
-            padding-top: 100px;
-            padding-right: 0;
-            text-align: center;  
-         }
-        #items nav li a {
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 700;
-            color: #fff;
-        }
-        #items a {
-            display: flex;
-            align-items: center;
-            justify-content:space-between;
-        }
-        footer p .copy {
-            color:darkgrey;
-        }
-         @media screen and (max-width: 480px) {
-            #items {
-                flex-wrap: wrap;
-                justify-content: center;
-             }
-         
-            #items ul {
-                display: none;
-               flex-direction: column;
-               overflow: hidden;
-               max-height: 0;
-               transition: max-height .2s ease-out;
-               justify-content: center;
-            }
-        
-            #items ul li {
-               margin: 0 0;
-               padding-bottom: 3rem;
-            }
-        }
+/* Footer Styles */
+.footerContainer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#items img {
+    width: 160px;
+}
+
+.socialIcons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footerBottom {
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 767px) {
+    #items {
+        flex-direction: column;
+    }
+
+    .socialIcons {
+        margin-top: 10px;
+    }
+}
+
                  /*-----end of footer-----*/
