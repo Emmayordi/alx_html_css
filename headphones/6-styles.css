@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+}
+
+p {
+    margin: 5px;
+}
+
+#results {
+    background-image: url("img/headphones_hero_2.jpg");
+    background-attachment: scroll;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0px;
+}
+
+#results div h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+#results div h2+p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 70px;
+}
+
+/* Creating the pentagon shape */
+.pentagon-container {
+    position: relative;
+    width: 157.5px;
+    height: 150px;
+    background: #FF6565;
+    clip-path: polygon(50% 0, 100% 38%, 81% 100%, 19% 100%, 0 38%);
+    margin-left: 500px;
+    margin-top: 50px;
+    text-align: center; /* Center text horizontally */
+}
+
+.pentagon-container h1,
+.pentagon-container p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1023px) {
+    .pentagon-container {
+        margin-left: 200px; /* Adjust as needed */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pentagon-container {
+        margin-left: 20px; /* Adjust as needed */
+        margin-top: 20px; /* Adjust as needed */
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .pentagon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+    }
+}
+
+
+
+
